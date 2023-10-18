@@ -35,7 +35,7 @@
     <div style="color:red; font-size: 10pt">* 필수 입력 항목</div>
     <p class = "c1">기본 정보</p>
 
-    <form name="usr_info" method="post" action="{% url 'creatieform' %}">
+    <form name="usr_info" method="post">
         <p class="info">
             <label for="name">이 름<span>*</span></label>
             <input type="text" id="name" name="name" size="8">
@@ -84,8 +84,8 @@
 
 
         <p class="info">
-            <label>졸업 여부<span>*</span></label>
-            <select name="graduation_status" >
+            <label for="graduation_status">졸업 여부<span>*</span></label>
+            <select name="graduation_status" id = "graduation_status">
                 <option value="1">---선택---</option>
                 <option value="2">졸업예정</option>
                 <option value="3">졸업</option>
