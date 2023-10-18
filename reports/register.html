@@ -9,7 +9,7 @@
     <p>* 필수 입력 항목</p>
     <p>기본 정보</p>
 
-    <form>
+    <form name = "usr_info" method="post" action="{% url'creatieform'%}">
         <div>
             <label for="name">이 름*</label>
             <input type="text" id="name" name="name" size="8">
@@ -95,16 +95,15 @@
 
         <p>자기소개서</p>
 
-        <form name="srch" action="{% url 'search' %}">
-            <div>
-                <label for="attachment">첨부 파일</label>
-                <input type="file" id="attachment" name="attachment"></div>
+        <div>
+            <label for="attachment">첨부 파일</label>
+            <input type="file" id="attachment" name="attachment"></div>
 
-            <div>
-                <input type="submit" value="제출">
-                <input type="reset" value="재작성">
-            </div>
-        </form>
+        <div>
+                input type="submit" value="제출">
+            <input type="reset" value="재작성">
+        </div>
+
     </form>
 </body>
 </html>
