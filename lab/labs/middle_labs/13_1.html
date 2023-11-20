@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>사용자 정보 입력</title>
+</head>
+<body>
+<h3>사용자 정보 입력</h3>
+<hr>
+
+<form name = "usr_info" method = "post" action = "{% url 'createform'%}">
+
+  <p><label for = "name">이름</label>
+  <input type = "text" name = "name" id = "name" size = "6">
+  <label for = "email">이메일</label>
+  <input type = "email" name = "email" id = "email" placeholder = "someond@domain.com">
+  <label for = "phone">연락처</label>
+  <input type = "tel" name = "phone" id = "phone" placeholder = "- 없이 번호만 입력">
+  <label for = "homepg">홈페이지</label>
+  <input type = "url" name = "homepg" id = "homepg" placeholder = "http://">
+  <label for = "pwd">수정 암호</label>
+  <input type = "password" name = "pwd" id = "pwd" size = "15"> (정보 수정시 사용)
+  <input type = "submit" value = "완료"></p>
+
+</form>
+
+</body>
+</html>
