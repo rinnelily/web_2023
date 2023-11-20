@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>수요조사</title>
+
+    <style>
+        .sub{
+            font-size: 1.1em;
+            width: 600px;
+            background-color: lightgray;
+            margin: 20px;
+            padding: 5px 5px 5px 10px;
+        }
+        #basic{
+            margin-left: 50px;
+        }
+        div > div {
+            margin-bottom: 10px;
+        }
+        .lbl{
+            display: inline-block;
+            width: 70px;
+            text-align: right;
+            padding-right: 10px;
+        }
+        #questions{
+            margin-left: 20px;
+        }
+        li{
+            margin-top: 20px;
+            margin-bottom: 5px;
+        }
+        #btn{
+            width: 600px;
+            height: 35px;
+            text-align: center;
+        }
+
+    </style>
+
+</head>
+<body>
+<h2 style="margin-left:230px;">수요 조사</h2>
+
+<form>
+    <div class="sub">고객 기본 정보</div>
+    <div id="basic">
+        <div><span class="lbl">고객명 </span>
+            <input type = "name" size="6" name="customer"></div>
+        <div><span class="lbl">전화번호 </span>
+            <input type = "tel" size=”13” name=”tel” placeholder="010-0000-0000"> </div>
+        <div><span class="lbl">이메일 </span>
+            <input type = "email" size="20" name=”mail” placeholder="id@domain"> </div>
+    </div>
+    <div class="sub">설문 사항</div>
+    <div id="questions">
+    <ol>
+        <li>당사의 제품 중 사용하신 제품명은 무엇입니까? </li>
+            <span><input type="text" name="product"></span>
+        <li>당사 제품의 전반적인 가격은 적정하다고 생각하십니까?</li>
+            <span>
+            <input type = "radio" name="price" value="expensive">비싸다
+            <input type = "radio" name="price" value="normal">적당하다
+            <input type = "radio" name="price" value="cheap">싸다</span>
+        <li>향후 당사 제품 중 1 년 이내에 구매 의사가 있는 제품은 무엇인가요?</li>
+            <span>
+            <input type = "checkbox" name="refri">냉장고
+            <input type = "checkbox" name="washer">세탁기
+            <input type = "checkbox" name="vacuum">청소기
+            <input type = "checkbox" name="purifier">공기청정기 </span>
+        <li>기타 제품 불만사항이 있으면 아래에 적어 주세요.</li>
+            <span>
+            <textarea rows=10 cols="70" name="suggest"></textarea> </span>
+ </ol>
+ <div id="btn">
+     <input type="submit" value="제출">
+     <input type="reset" value="재 작성">
+ </div>
+</form>
+</body>
+</html>
